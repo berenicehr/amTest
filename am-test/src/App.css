@@ -309,6 +309,22 @@ main{
     margin: 0;
   }
 
+  .filter-button:hover{
+    width: 10.8em;
+    height: 3.3em;
+    font-size: .8125em;
+    margin: 0;
+  }
+
+  .filter-button:active{
+      width: 10.8em;
+      height: 3.3em;
+      font-size: .8125em;
+      margin: 0;
+  }
+
+
+
   .cards-container{
     margin: 0;
   }
