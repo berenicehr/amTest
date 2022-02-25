@@ -1,0 +1,369 @@
+
+
+body{
+  background-color: black;
+  background-image: url('../src/images/Background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  display:flex;
+  flex-direction: column;
+}
+
+nav{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.mobileNav{
+  display:none;
+}
+
+.nav-buttons{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -.5em;
+  margin-right: 5em;
+  
+}
+
+
+.nav-button{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #6B63B5;
+  margin:0;
+  height: 2.50em;
+  width: 10.3em;
+  color: #FFFFFF;
+  font-size:0.875em;
+
+  
+}
+
+.add{
+  border-bottom-right-radius: 1em;
+}
+
+.favorites{
+  border-bottom-left-radius: 1em;
+}
+
+.harry-potter-logo{
+  margin-top: 8em;
+  display:flex;
+  justify-content: center;
+}
+
+.filter-label {
+  display:flex;
+  color: #FFFFFF;
+  justify-content: center;
+  font-size: 2.25em;
+  font-family:'';
+  line-height: 1.5625em;
+  align-self: flex-start;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-top: .7em;
+  margin-bottom: .5em;
+  
+ 
+}
+
+.filter-buttons{
+  display:flex;
+  justify-content: center;
+  
+}
+
+.filter-button{
+  border-color: rgba(107, 99, 181, 1);  
+  border-width: .25em;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 1);
+  width: 18em;
+  height: 4.1875em;
+  font-size:  1.0625em;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2em;
+  margin-right: 2.5em;
+  margin-left: 3em;
+ 
+}
+
+.filter-button:hover{
+
+  border:solid #6B63B5;
+  background-color: rgba(107, 99, 181, 0.6);
+  color: rgba(255, 255, 255, 1);
+  width: 18em;
+  height: 4.1875em;
+  font-size:  1.0625em;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2em;
+  margin-right: 2.5em;
+  margin-left: 3em;
+}
+
+.filter-button:active{
+
+  border:solid #6B63B5;
+  background-color: #6B63B5;
+  color: rgba(255, 255, 255, 1);
+  width: 18em;
+  height: 4.1875em;
+  font-size:  1.0625em;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2em;
+  margin-right: 2.5em;
+  margin-left: 3em;
+}
+
+.cards-container{
+ display:flex;
+ justify-content: space-evenly;
+ align-items: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ margin-left: 6.1875em;
+ margin-right: 6.1875em;
+ margin-top: 8em;
+ 
+}
+
+ .cards{
+  display:flex;
+  flex-direction: row;
+  height: 16.5625em;
+  width: 32.1875em;
+  background-color:  #FFFFFF;
+  border-radius: 1em;
+  margin-right: 2.9375em;
+  margin-bottom: 3.1875em;
+  
+} 
+
+.name{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875em;
+  line-height: 2.875em;
+  margin: 0%;
+}  
+
+.card-detail{
+  height: 7em;
+  width:  11.5em;
+}
+
+.card-details{
+  
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; 
+  font-style: normal;
+  font-weight: bold;
+  color: #374A59;
+  font-size:  .875em;
+  line-height: 1.6875em;  
+}
+.card-text{
+  display:flex;
+  flex-direction: column;
+}
+
+.image{
+  width: 10.58125em;
+  height: 14.394375em;
+  object-fit: contain;
+  clip-path: circle(37.5% at 50% 50%);
+  object-position: center;
+} 
+
+main{
+  margin:0%;
+}
+
+.image-container{
+  width: 13.125em;
+  height: 16.5625em;
+  background: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.status-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.Save{
+  width:1.7em;
+  height:1.375em;
+}
+.status-text{
+  display: flex;
+  flex-direction: row;
+}
+
+.radiobutton-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.radiobutton{
+  width: 1em;
+  height: 1em;
+}
+
+.modal-button{
+  display:flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 412px) {
+
+
+  body{
+    background-color: black;
+    background-image: none;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  nav{
+    display:none;
+  }
+
+
+  .mobileNav{
+    width: 100vw;
+    margin-top:1.3em;
+    position:fixed;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    bottom: 100%;
+    display: block;
+    display:flex;
+    bottom: 0;
+
+  }
+
+  .add {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 0;
+  }
+  .favorites{
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 0;
+  }
+
+  .harry-potter-logo{
+    margin-top: 1.875em;
+    display:flex;
+    justify-content: center;
+
+  }
+
+ 
+
+  .filter-label {
+    display:flex;
+    color: #FFFFFF;
+    justify-content: center;
+    font-size:  1.121em;
+    line-height: 1.5625em;
+    align-self: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: .4em;
+    margin-bottom: 1em;
+    
+  }
+  .filter-menu{
+    width:100vw;
+  }
+
+  .filter-buttons{
+    display:flex;
+    justify-content: space-evenly;
+    padding-left: .8125em;
+    padding-right: .8125em;
+
+  }
+
+  .filter-button{
+    width: 10.8em;
+    height: 3.3em;
+    font-size: .8125em;
+    margin: 0;
+  }
+
+  .cards-container{
+    margin: 0;
+  }
+
+  .container{
+    width: 8.78em;
+    height: 11.33em;
+    margin-top: 1.6em;
+  }
+
+  .cards{
+    width: 8.78em;
+    height: 11.33em;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 5.4375em;
+    background: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.image{
+  width: 4.425em;
+  height: 6.019375em;
+}
+
+.name {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125em;
+  line-height: 1.4em; 
+
+  margin: 0%;
+}
+.card-details{
+  display: none;
+}
+
+.mobileText{
+  display:flex;
+  flex-direction: column-reverse;
+}
+.status{
+  font-size: .6875em;
+  color: #999999;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+}
+
+}
